@@ -10,13 +10,13 @@ import java.util.List;
 public class Input {
     public static List<Pool> parse() throws IOException {
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        List<Pool> poolList = new ArrayList<Pool>();
+        List<Pool> poolList = new ArrayList<>();
         int poolCount = Integer.valueOf(stdin.readLine());
         for (int poolNumber = 0; poolNumber < poolCount; poolNumber++) {
             String[] sizes = stdin.readLine().split(" ");
             int x = Integer.valueOf(sizes[1]);
             int y = Integer.valueOf(sizes[0]);
-            List<String> lines = new ArrayList<String>();
+            List<String> lines = new ArrayList<>();
             for (int currentLevel = 0; currentLevel < y; currentLevel++) {
                 lines.add(stdin.readLine());
             }

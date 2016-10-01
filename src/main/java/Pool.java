@@ -123,7 +123,7 @@ public class Pool {
     }
 
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("2 3 2");
         list.add("7 1 11");
         list.add("10 1 9");
