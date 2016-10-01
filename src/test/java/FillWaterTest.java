@@ -1,4 +1,4 @@
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -14,7 +14,7 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(Parameterized.class)
 public class FillWaterTest {
-    private Pool pool;
+    private static Pool pool;
 
     @Parameterized.Parameter(0)
     public int x_min;
@@ -40,8 +40,8 @@ public class FillWaterTest {
         });
     }
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeClass
+    public static void setUp() throws Exception {
         pool = new Pool();
         pool.fillUpEx1();
     }
